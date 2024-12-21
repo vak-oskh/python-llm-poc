@@ -2,6 +2,10 @@ import openmeteo_requests
 import requests
 from retry_requests import retry
 
+####### Needs cleaning up return data #########
+# EX. {'temprature': 9.267499923706055, 'weather_code': 51, 'weather_description': 'Drizzle: Light, moderate, and dense intensity'}
+# return needs to be a rounded temp
+
 # Main function to fetch weather
 # the Open-Meteo API: https://open-meteo.com/en/docs
 # return current_weather_data {
@@ -109,3 +113,4 @@ def get_current_location():
     except Exception as e:
         print(f"Error getting location: {e}")
         return None, None, None
+
