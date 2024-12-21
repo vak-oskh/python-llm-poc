@@ -3,7 +3,7 @@ import requests
 
 def query_llm(prompt):
     url = "https://ollama-yggo8cggoc8k55w0w05c0s85.ovcraft.com/api/chat/completions"
-    model = "qwen2.5-coder:3b"
+    model = "qwen2.5-coder:latest"
     token = "sk-0db19bdb96794a308fb81391d4b69063"
 
     headers = {
